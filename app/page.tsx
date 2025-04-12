@@ -4,15 +4,20 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        The Human Obsolescence Index: Who are we?
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`We are witnessing a concerted push by powerful actors to render humanity obsolete.`}
       </p>
+      <p className="mb-4">
+        {`We are an extremely pluralistic group: concerned citizens, former technologists, farmers, born-again Christians, artists, real housewives, and more. What unites us is our belief that the development of artificial general intelligence (AGI) is a deliberate plot to undermine our foundational values and way of life.`}
+      </p>
+      <p className="mb-4">
+        {`We began the Human Obsolescence Index to keep track of these developments. Follow our index and blog for updates.`}
+      </p>
+      {/* <p className="mb-4">
+        {`Is it God's plan to make us obsolete? Or is the product of the actions of a few malicious actors? These are amazing questions that we hope to uncover.`}
+      </p> */}
       <div className="my-8">
         <BlogPosts />
       </div>
