@@ -68,7 +68,8 @@ export default function Page() {
         <b>Why?</b>
       </p>
       <p className="mb-4">
-        If you were to sum the digits of {randomDate}, you would get {sumOfDigits}. Multiplying {sumOfDigits} by {Math.floor(666 / sumOfDigits)} and adding {666 - sumOfDigits * Math.floor(666 / sumOfDigits)} gets you 666. Coincidence?
+        This is an approximation based on our Obsolescence Index scores. For further proof,
+        if you were to sum the digits of {randomDate}, you would get {sumOfDigits}. Multiplying {sumOfDigits} by {Math.floor(666 / sumOfDigits)} and adding {666 - sumOfDigits * Math.floor(666 / sumOfDigits)} gets you 666. Coincidence?
       </p>
       <p className="mb-4">
         <b>How do we stop this?</b>
