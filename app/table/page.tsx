@@ -18,6 +18,7 @@ type Task = {
     id: number
     task: string
     score: number
+    reference: string
   }
 
 export default async function Page() {
@@ -39,12 +40,13 @@ export default async function Page() {
     
         const task = formData.get('task') as string
         const score = parseInt(formData.get('score') as string)
+        const reference = formData.get('reference') as string
 
         console.log(task);
     
         if (!task || isNaN(score)) return
     
-        await supabase.from('tasks').insert({ name: task, score: score })
+        await supabase.from('tasks').insert({ name: task, score: score, reference: reference })
         redirect('/table') // refresh the page with new data
       }
 
@@ -69,7 +71,7 @@ export default async function Page() {
         <tbody>
           {tasks?.map((t) => (
             <tr key={t.id}>
-<td className="border px-4 py-2 whitespace-normal break-words">{t.name}</td>
+<td className="border px-4 py-2 whitespace-normal break-words">{t.name} [<a className="text-blue-700" href={t.reference}>source</a>]</td>
 <td className="border px-4 py-2">{t.score}</td>
             </tr>
           ))}
@@ -104,11 +106,19 @@ export default async function Page() {
           className="w-full border px-3 py-2 rounded"
           required
         />
+        <input
+          name="reference"
+          type="text"
+          placeholder="Source"
+          className="w-full border px-3 py-2 rounded"
+          required
+        />
         <button
           type="submit"
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          // className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
         >
-          Give me a sign
+          <img className="center" src="/submit.gif" alt="Flame" />
+          {/* Give me a sign */}
         </button>
       </form>
 

@@ -52,10 +52,11 @@ export default function Footer() {
             <p className="ml-2 h-7">view source</p>
           </a>
         </li>
-      </ul> */}
-      {/* <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
-      </p> */}
+      </ul>  */}
+      <p className="mt-8 text-sm text-neutral-600 dark:text-neutral-300">
+        Alternate reality parody website created by Conan Lu for GENED 1001, Spring 2025. All similarities to real people, places, or contemporary discourse are intentional.
+        {/* © {new Date().getFullYear()} MIT Licensed */}
+      </p>
     </footer>
   )
 }
