@@ -21,6 +21,7 @@ type Task = {
     reference: string
   }
 
+
 export default async function Page() {
 
     const supabase = await createClient();
@@ -52,9 +53,11 @@ export default async function Page() {
 
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+            <img src="/index.gif"></img>
+
+      {/* <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         The Human Obsolescence Index
-      </h1>
+      </h1> */}
       <p className="mb-4">
         {`As we approach the possibility of human obsolescence, we believe there will be signs. This index is a non-exhaustive list of those signs. Many of these are tasks an artificial general intelligence will be able to accomplish.`}
       </p>

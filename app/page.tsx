@@ -3,9 +3,11 @@ import { BlogPosts } from 'app/components/posts'
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+      <img src="/index.gif"></img>
+
+      {/* <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         The Human Obsolescence Index: Who are we?
-      </h1>
+      </h1> */}
       <p className="mb-4">
         {`We are witnessing a concerted push by powerful actors to render humanity obsolete.`}
       </p>

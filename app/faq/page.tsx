@@ -39,9 +39,10 @@ export default function Page() {
 
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+      <img src="/faq.gif"></img>
+      {/* <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         Frequently asked questions
-      </h1>
+      </h1> */}
       <p className="mb-4">
         <b>What is the T.O.?</b>
       </p>
